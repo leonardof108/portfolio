@@ -1,24 +1,25 @@
 # portfolio
 
-Static personal portfolio site, served by nginx on the VPS as the site root (`/`).
+Personal site for [Leonardo Ferreira](https://github.com/leonardof108) — a static, no-build portfolio in HTML and CSS.
 
-- No build step — plain HTML + CSS.
-- Deployed by cloning this repo to `/srv/portfolio` on the VPS and running `git pull`
-  (see the `infra` repo for the nginx config).
+The page introduces Leonardo as a full-stack and backend developer in Porto Alegre, showcases six public projects, and lists a verified core stack plus contact links (GitHub, LinkedIn, and email).
 
 ## Develop
 
-Just open `index.html` in a browser, or serve locally:
+There is no build step. Open `index.html` in a browser, or serve the folder locally:
 
 ```sh
 python3 -m http.server 8080
 ```
 
+Use **relative** asset paths only. The site can be hosted at `/` alongside other apps under path prefixes, so absolute `/...` URLs would break those apps.
+
 ## Deploy
 
-Managed centrally from the `infra` repo. On the VPS:
+The site is served by host nginx from `/srv/portfolio` on the VPS (site root `/`). Deploy is managed from the private `infra` repo: on the VPS, pull this repository and nginx will serve the updated files with no reload.
 
 ```sh
 cd /srv/portfolio && git pull
-# nginx reads files directly; no reload needed for content changes
 ```
+
+GitHub Pages is not enabled for this repository.

@@ -3,50 +3,182 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Leonardo Ferreira — software development portfolio and projects.">
-  <title>Leonardo Ferreira | Developer Portfolio</title>
+  <meta name="description" content="Leonardo Ferreira — Full-Stack and Backend Developer in Porto Alegre, Brazil. Java, Spring Boot, TypeScript, React, Node.js, and PostgreSQL.">
+  <meta name="author" content="Leonardo Ferreira">
+  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Leonardo Ferreira | Full-Stack &amp; Backend Developer">
+  <meta property="og:description" content="Full-Stack and Backend Developer in Porto Alegre, Brazil. Java, Spring Boot, TypeScript, React, Node.js, and PostgreSQL.">
+  <meta property="og:type" content="website">
+  <title>Leonardo Ferreira | Full-Stack &amp; Backend Developer</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
-    <p class="eyebrow">Developer Portfolio</p>
-    <h1>Hi, I'm Leonardo.</h1>
-    <p class="lede">
-      I'm a Systems Analysis and Development student interested in software
-      engineering, backend development, and computer systems.
-    </p>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <section>
-      <h2>Currently exploring</h2>
-      <ul class="tags">
-        <li>JavaScript</li>
+  <header class="site-header">
+    <a class="wordmark" href="#top">Leonardo Ferreira</a>
+    <nav aria-label="Primary">
+      <a href="#projects">Projects</a>
+      <a href="#stack">Stack</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="name">
+      <p class="eyebrow">Porto Alegre, Brazil</p>
+      <h1 id="name">Leonardo Ferreira</h1>
+      <p class="role">Full-Stack &amp; Backend Developer</p>
+      <p class="lede">
+        I build business applications from the database up to the interface,
+        with Java, Spring Boot, TypeScript, React, Node.js, and PostgreSQL.
+        I work in IT support at SKYMED and study Systems Analysis and
+        Development at SENAI.
+      </p>
+      <p class="cta">
+        <a class="button" href="https://github.com/leonardof108">GitHub</a>
+        <a class="button" href="https://linkedin.com/in/leonardof108">LinkedIn</a>
+        <a class="button button-primary" href="mailto:leonardof108@gmail.com">Email</a>
+      </p>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Featured projects</h2>
+      <div class="project-grid">
+        <article class="project">
+          <h3>
+            <a href="https://github.com/leonardof108/TransactionStatsAPI">TransactionStatsAPI</a>
+          </h3>
+          <p>Spring Boot 3 and React dashboard for real-time transaction statistics over a 60-second window.</p>
+          <ul class="tags" aria-label="Technologies">
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>JUnit</li>
+            <li>Docker</li>
+          </ul>
+          <p class="project-links">
+            <a href="https://github.com/leonardof108/TransactionStatsAPI">GitHub</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://transaction-stats-api.vercel.app">Live demo</a>
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>
+            <a href="https://github.com/leonardof108/rest-demo">rest-demo</a>
+          </h3>
+          <p>Spring Boot REST API with PostgreSQL, validation, Basic Auth, Swagger, tests, and Docker Compose.</p>
+          <ul class="tags" aria-label="Technologies">
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>PostgreSQL</li>
+            <li>Swagger</li>
+            <li>JUnit</li>
+            <li>Docker</li>
+          </ul>
+          <p class="project-links">
+            <a href="https://github.com/leonardof108/rest-demo">GitHub</a>
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>
+            <a href="https://github.com/leonardof108/StockMgmtAPI">StockMgmtAPI</a>
+          </h3>
+          <p>Spring Boot inventory API with PostgreSQL and Docker Compose.</p>
+          <ul class="tags" aria-label="Technologies">
+            <li>Java</li>
+            <li>Spring Boot</li>
+            <li>PostgreSQL</li>
+            <li>Docker</li>
+          </ul>
+          <p class="project-links">
+            <a href="https://github.com/leonardof108/StockMgmtAPI">GitHub</a>
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>
+            <a href="https://github.com/leonardof108/gerenciamento-de-produtos">gerenciamento-de-produtos</a>
+          </h3>
+          <p>Node.js CLI for product management at a small store, with Jest tests.</p>
+          <ul class="tags" aria-label="Technologies">
+            <li>Node.js</li>
+            <li>JavaScript</li>
+            <li>Jest</li>
+          </ul>
+          <p class="project-links">
+            <a href="https://github.com/leonardof108/gerenciamento-de-produtos">GitHub</a>
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>
+            <a href="https://github.com/leonardof108/galeria-de-fotos">galeria-de-fotos</a>
+          </h3>
+          <p>Responsive TypeScript and React photo gallery with search and filtering.</p>
+          <ul class="tags" aria-label="Technologies">
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Vite</li>
+            <li>Tailwind CSS</li>
+          </ul>
+          <p class="project-links">
+            <a href="https://github.com/leonardof108/galeria-de-fotos">GitHub</a>
+            <span aria-hidden="true">·</span>
+            <a href="https://galeria-de-fotos-inky.vercel.app">Live demo</a>
+          </p>
+        </article>
+
+        <article class="project">
+          <h3>
+            <a href="https://github.com/leonardof108/desafio-simfrete-java-leonardo-ferreira">desafio-simfrete-java-leonardo-ferreira</a>
+          </h3>
+          <p>Java backend take-home for Simfrete's junior developer role.</p>
+          <ul class="tags" aria-label="Technologies">
+            <li>Java</li>
+          </ul>
+          <p class="project-links">
+            <a href="https://github.com/leonardof108/desafio-simfrete-java-leonardo-ferreira">GitHub</a>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack" aria-labelledby="stack-heading">
+      <h2 id="stack-heading">Core stack</h2>
+      <p class="section-intro">Tools I use in public projects.</p>
+      <ul class="tags tags-lg" aria-label="Core stack">
+        <li>Java</li>
+        <li>Spring Boot</li>
         <li>TypeScript</li>
-        <li>Python</li>
-        <li>C</li>
-        <li>Linux</li>
+        <li>React</li>
+        <li>Node.js</li>
         <li>PostgreSQL</li>
+        <li>Docker</li>
+        <li>JUnit</li>
+        <li>Jest</li>
+        <li>GitHub Actions</li>
       </ul>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <p>Projects will appear here as I build and publish them.</p>
-      <!--
-      <article class="project">
-        <h3><a href="/app-a/">App A</a></h3>
-        <p>Short description of the project.</p>
-      </article>
-      -->
-    </section>
-
-    <section>
-      <h2>Find me online</h2>
-      <p class="links">
-        <a href="https://github.com/leonardof108">GitHub</a>
-        <span>·</span>
-        <a href="https://www.linkedin.com/in/leonardof108/">LinkedIn</a>
+      <p class="exploring">
+        Currently exploring NestJS, Next.js, Playwright, Vitest, Selenium, Pytest, and Flask.
       </p>
     </section>
   </main>
+
+  <footer id="contact">
+    <h2>Find me</h2>
+    <p class="links">
+      <a href="https://github.com/leonardof108">GitHub</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://linkedin.com/in/leonardof108">LinkedIn</a>
+      <span aria-hidden="true">·</span>
+      <a href="mailto:leonardof108@gmail.com">leonardof108@gmail.com</a>
+    </p>
+  </footer>
 </body>
 </html>
